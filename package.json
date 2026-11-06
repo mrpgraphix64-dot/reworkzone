@@ -1,0 +1,44 @@
+{
+  "name": "reworkzone-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:vite": "vite --port=4000 --host=0.0.0.0",
+    "dev:server": "tsx server.ts",
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:server\"",
+    "build": "vite build && esbuild server.ts --bundle --outfile=server.js --format=esm --platform=node --external:express --external:multer --external:helmet --external:dotenv --external:express-rate-limit --external:@google/genai",
+    "start": "node server.js",
+    "preview": "vite preview",
+    "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true});fs.rmSync('server.js',{force:true})\"",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.5.2",
+    "gsap": "^3.15.0",
+    "helmet": "^8.3.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "multer": "^2.2.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^22.14.0",
+    "concurrently": "^10.0.3",
+    "esbuild": "^0.25.0",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cms
+
+Sitemap: https://reworkzone.com/sitemap.xml

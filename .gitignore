@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# User submissions & uploads
+resumes/
+inquiries.json
+applications.json
+
+# System & Cache
+.DS_Store
+Thumbs.db
