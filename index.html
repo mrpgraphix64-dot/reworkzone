@@ -28,8 +28,126 @@
     <script type="module" crossorigin src="/assets/index-DF2nmw98.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-D-1lBw8D.css">
   </head>
-  <body>
-    <div id="root"></div>
+    <body>
+    <div id="root"></div>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a
+      href="https://wa.me/918980004518?text=Hello%20Reworkzone%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp (+91 89800 04518)"
+      id="whatsapp-floating-btn"
+      class="whatsapp-float"
+    >
+      <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+      <svg class="whatsapp-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.652.74 5.132 2.025 7.251L2.05 29.35a.8.8 0 0 0 .999.999l6.099-1.975A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Zm7.784 18.736c-.328.92-1.637 1.76-2.28 1.868-.617.104-1.425.148-4.24-1.02-3.418-1.417-5.617-4.887-5.787-5.115-.17-.228-1.385-1.844-1.385-3.518 0-1.673.874-2.497 1.186-2.839.312-.342.682-.428.91-.428.228 0 .456.002.655.012.21.01.492-.08.769.585.286.685.97 2.366 1.055 2.537.085.17.142.37.028.598-.114.228-.17.37-.342.57-.17.199-.358.444-.512.597-.17.17-.348.356-.15.698.199.342.883 1.458 1.895 2.36 1.302 1.16 2.401 1.52 2.743 1.69.342.17.541.142.74-.085.2-.228.854-.997 1.082-1.339.228-.342.456-.285.769-.17.313.114 1.993.94 2.335 1.111.342.17.57.256.655.399.085.142.085.826-.243 1.746Z" fill="#ffffff"/>
+      </svg>
+      <span class="whatsapp-pulse"></span>
+    </a>
+
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 58px;
+        height: 58px;
+        background-color: #25d366;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.42), 0 4px 10px rgba(0, 0, 0, 0.12);
+        z-index: 99999;
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.08) translateY(-2px);
+        box-shadow: 0 14px 32px rgba(37, 211, 102, 0.58), 0 6px 14px rgba(0, 0, 0, 0.16);
+      }
+      .whatsapp-float:active {
+        transform: scale(0.94);
+      }
+      .whatsapp-icon {
+        width: 34px;
+        height: 34px;
+      }
+      .whatsapp-pulse {
+        position: absolute;
+        inset: -3px;
+        border-radius: 50%;
+        border: 2px solid #25d366;
+        opacity: 0.7;
+        animation: wa-pulse 2.2s infinite cubic-bezier(0.24, 0, 0.38, 1);
+        pointer-events: none;
+      }
+      @keyframes wa-pulse {
+        0% {
+          transform: scale(0.95);
+          opacity: 0.8;
+        }
+        70% {
+          transform: scale(1.35);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1.35);
+          opacity: 0;
+        }
+      }
+      .whatsapp-tooltip {
+        position: absolute;
+        right: 70px;
+        background: #0f172a;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(8px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      }
+      .whatsapp-tooltip::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -4px;
+        transform: translateY(-50%);
+        border-width: 4px 0 4px 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent #0f172a;
+      }
+      .whatsapp-float:hover .whatsapp-tooltip {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      @media (max-width: 640px) {
+        .whatsapp-float {
+          bottom: 20px;
+          right: 20px;
+          width: 52px;
+          height: 52px;
+        }
+        .whatsapp-icon {
+          width: 30px;
+          height: 30px;
+        }
+        .whatsapp-tooltip {
+          display: none;
+        }
+      }
+    </style>
   </body>
 </html>
 
