@@ -1,263 +1,267 @@
-import{c as f,a as o,f as p,d as u,j as e,S as $,m as s,L as C,x as G,p as H,A,k as U,X,y as K,z as Z,I as J,g as Q,B as ee,T as te,P as se,o as ae,n as ie,F as ne}from"./index-DF2nmw98.js";import{C as re}from"./chevron-left-trjNjfiy.js";import{C as g}from"./chevron-right-BS2MTjv9.js";import{C as oe}from"./cpu-LYuG7DkD.js";import{Z as R}from"./zap-CWgv_O3-.js";import{P as le}from"./printer-CrkWylFZ.js";
+import { j as e, L as C } from "./index-DF2nmw98.js";
 
 /**
- * Reworkzone — About Us / Vision
- * Redesigned using taste-skill 2.5 standards:
- * - Anti-slop, plain-spoken editorial copy
- * - Real photography from executed projects
- * - One section per screen rhythm, equal edges
- * - Quiet micro-interactions & high visual craft
+ * Reworkzone — About Us / Company Profile & Story
+ * Authored using design-taste-frontend (taste-skill 2.5) standards:
+ * - Direct, authentic company copy without artificial fluff
+ * - Equal-edge 1200px max-width layout rhythm
+ * - 6 interconnected creative disciplines
+ * - Interactive micro-transitions and clean typography
  */
 
 const DISCIPLINES = [
   {
     num: "01",
-    title: "Spatial & Event Fabrication",
-    subtitle: "Turnkey Stalls & Venue Architecture",
-    description: "From custom 3D pavilion modeling to complete on-site carpentry, truss engineering, electrical compliance, and crowd orchestration.",
-    image: "/Image/Gallery/ONGC/DSC_6410.jpg",
-    proof: "ONGC Navratri, JMCL Stadium & Government Pavilions",
+    title: "Event Management",
+    tag: "EXPERIENCES & SPATIAL",
+    description: "Creating memorable experiences and bringing ambitious events to life.",
+    bullets: [
+      "Large-scale cultural festivals & corporate summits",
+      "Full turnkey venue staging, lighting & truss rigging",
+      "High-capacity crowd coordination & safety orchestration"
+    ],
     link: "/services/event-mgmt"
   },
   {
     num: "02",
-    title: "Brand Strategy & Identity",
-    subtitle: "Visual Architecture & Design Systems",
-    description: "Designing memorable logo systems, comprehensive brand books, luxury packaging, and print collateral that build durable business equity.",
-    image: "/Image/Gallery/Brand-Activations/brand-activation-identity-display-07.webp",
-    proof: "Royal Albert Palace, Murlidhar Sweets & Aster 360",
-    link: "/services/branding"
+    title: "Creative Design",
+    tag: "VISUAL COMMUNICATION",
+    description: "Transforming ideas into compelling visual communication.",
+    bullets: [
+      "3D spatial modeling, architectural stall renders",
+      "Brand collateral, signage & large-format graphics",
+      "Packaging, print media & publication systems"
+    ],
+    link: "/services/design"
   },
   {
     num: "03",
-    title: "Digital Products & Web Platforms",
-    subtitle: "Bespoke React Engineering",
-    description: "High-performance corporate websites, customer self-service portals, and custom QR-code digital ticketing systems built with zero bloat.",
-    image: "/Image/Web1.webp",
-    proof: "0.4s Interactive Speeds & Automated Check-in Tech",
+    title: "Website Development",
+    tag: "DIGITAL ARCHITECTURE",
+    description: "Building functional, engaging digital experiences.",
+    bullets: [
+      "High-performance custom web applications & portals",
+      "Event digital ticketing & QR code check-in tech",
+      "Responsive, ultra-clean UI/UX engineered for speed"
+    ],
     link: "/services/web-dev"
   },
   {
     num: "04",
-    title: "Cinematic Film & Motion",
-    subtitle: "In-House Commercial Production",
-    description: "Multi-camera 4K stage coverage, aerial drone cinematography, and motion graphics that communicate enterprise capability and vision.",
-    image: "/Image/Gallery/Techexpo/20251220_153544.webp",
-    proof: "Tech Expo Gujarat, Corporate Documentaries & Ad Films",
+    title: "Branding & Strategy",
+    tag: "IDENTITY & POSITIONING",
+    description: "Shaping distinctive identities and meaningful brand connections.",
+    bullets: [
+      "Core brand positioning & narrative frameworks",
+      "Comprehensive design systems & identity guidelines",
+      "Durable market positioning across physical & digital"
+    ],
+    link: "/services/branding"
+  },
+  {
+    num: "05",
+    title: "Film Production",
+    tag: "CINEMATIC STORYTELLING",
+    description: "Bringing stories to life through powerful visual storytelling.",
+    bullets: [
+      "Cinematic 4K multi-camera event & stage coverage",
+      "Brand commercial films & corporate documentaries",
+      "Post-production grading, sound design & motion"
+    ],
     link: "/services/film-prod"
+  },
+  {
+    num: "06",
+    title: "Digital Marketing",
+    tag: "GROWTH & ENGAGEMENT",
+    description: "Helping brands connect, engage, and grow in the digital world.",
+    bullets: [
+      "Multi-channel performance & awareness campaigns",
+      "Targeted audience acquisition & community engagement",
+      "Data-backed content strategy with measurable ROI"
+    ],
+    link: "/services/digital-marketing"
   }
 ];
 
-const WORKFLOW_STEPS = [
+const PILLARS = [
   {
     step: "01",
-    phase: "Discovery & Strategy",
-    title: "Defining Distinct Positioning",
-    desc: "Before sketching or drafting, we analyze market positioning, audience friction, and core commercial objectives so every decision serves business growth."
+    title: "Think Beyond",
+    subtitle: "Curiosity & Vision",
+    body: "We look beyond standard templates and predictable paths. By questioning conventional industry boundaries, we find bolder, smarter ways for brands to stand out and lead."
   },
   {
     step: "02",
-    phase: "3D Spatial & Visual Design",
-    title: "Precision Prototyping",
-    desc: "We generate complete 3D structural CAD layouts with lighting simulations for stalls, and interactive Figma component systems for digital interfaces."
+    title: "Create With Purpose",
+    subtitle: "Functional Meaning",
+    body: "Creativity without intention is mere decoration. Every design, platform, and physical environment we produce solves a concrete problem and genuinely serves its audience."
   },
   {
     step: "03",
-    phase: "In-House Fabrication & Code",
-    title: "Zero-Outsourcing Build",
-    desc: "Built directly in our Ahmedabad workshop with finished woods, structural metals, and certified electrical planning—ensuring total quality control."
-  },
-  {
-    step: "04",
-    phase: "Live Showtime Execution",
-    title: "Flawless On-Ground Delivery",
-    desc: "Our on-site crew orchestrates AV setups, attendee entry clearance, and technical handovers well before doors open, guaranteeing zero downtime."
+    title: "Deliver With Precision",
+    subtitle: "Execution Integrity",
+    body: "Ambitious concepts only matter when executed flawlessly. From on-ground rigging to production code, we manage every detail so handover is punctual and without compromise."
   }
 ];
 
-const LANDMARKS = [
+const ROLES = [
   {
-    year: "2026",
-    title: "ONGC Navratri & JMCL Sports Arena",
-    location: "Malaviya Cricket Ground & VIVENZA, Ahmedabad",
-    scope: "Executed a flagship 9-night Navratri Garba festival with automated QR e-pass entry alongside complete stadium tournament branding."
+    role: "Designers & Art Directors",
+    desc: "Shaping visual languages, spatial 3D models, typography, and enduring brand identities."
   },
   {
-    year: "2025",
-    title: "Tech Expo Gujarat Retreat & Digital Scale",
-    location: "Neonz Resort & Club, Gujarat",
-    scope: "Turnkey venue transformation, keynote stage fabrication, sponsor pavilions, and enterprise SaaS analytics interfaces."
+    role: "Developers & Engineers",
+    desc: "Architecting high-speed web apps, QR ticketing engines, and frictionless digital touchpoints."
   },
   {
-    year: "2024",
-    title: "IOvista & Webnet Solutions Summits",
-    location: "Madhuban Resort & Ahmedabad",
-    scope: "Delivered comprehensive annual corporate summits, high-impact keynote stage architecture, and executive attendee experiences."
+    role: "Fabricators & Riggers",
+    desc: "Translating architectural plans into physical staging, precision carpentry, and robust structures."
   },
   {
-    year: "2023",
-    title: "Siddhashram UK Navratri Festival",
-    location: "United Kingdom",
-    scope: "International cultural stage fabrication, traditional festive ambiance, and seamless cross-border production management."
+    role: "Strategists & Producers",
+    desc: "Harmonizing client objectives, production timelines, and on-ground execution with zero friction."
   }
 ];
 
-const PRINCIPLES = [
-  {
-    title: "In-House Workshop & Crew",
-    subtitle: "Direct makers, no contractor markups",
-    desc: "We operate our own physical fabrication workshop and design studio in Ahmedabad. Clients work directly with the architects and builders who physically erect the structures and write the code."
-  },
-  {
-    title: "Dual Fluency: Physical + Digital",
-    subtitle: "Bridging architectural stalls and modern software",
-    desc: "Most agencies only design digital screens; most exhibition fabricators only cut timber. We master both, integrating live QR access systems, smart screens, and interactive tech into custom physical environments."
-  },
-  {
-    title: "Zero-Delay Delivery Standard",
-    subtitle: "Built, certified, and handed over early",
-    desc: "Live events and product launches have immovable deadlines. Every booth, exhibition structure, and web platform is audited, safety-certified, and handed over hours before showtime."
-  }
-];
-
-function AboutUsView({ onOpenContact, setActiveView }) {
-  const [activeTab, setActiveTab] = o.useState(0);
-
-  const handleInquiry = (subject) => {
-    if (typeof onOpenContact === "function") {
-      onOpenContact(subject || "General Agency Inquiry");
-    } else {
-      window.location.href = "/contact";
-    }
-  };
-
-  return e.jsxs("div", {
-    className: "bg-[#FCFAF8] text-charcoal font-sans antialiased min-h-screen selection:bg-crimson selection:text-white",
-    id: "about-us-page-root",
+function AboutUsView() {
+  return e.jsxs("main", {
+    className: "w-full bg-[#FAFAFA] text-zinc-900 font-sans selection:bg-red-500 selection:text-white pt-24 pb-20",
     children: [
-      e.jsx($, {
-        route: "vision",
-        customTitle: "About Us — Creative Agency & Spatial Fabrication | Reworkzone",
-        customDescription: "Reworkzone is an Ahmedabad-based creative agency specializing in turnkey exhibition stalls, brand identities, custom React websites, and commercial cinema."
+
+      /* 1. HERO SECTION */
+      e.jsx("section", {
+        className: "relative border-b border-zinc-200/80 bg-white py-16 lg:py-24",
+        children: e.jsxs("div", {
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+          children: [
+            // Kicker
+            e.jsxs("div", {
+              className: "inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-red-200 bg-red-50/70 text-xs font-semibold tracking-wider text-red-600 uppercase mb-8",
+              children: [
+                e.jsx("span", { className: "inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse" }),
+                "EST. 2023 — BUILT TO CREATE. DRIVEN TO DELIVER."
+              ]
+            }),
+
+            // H1
+            e.jsx("h1", {
+              className: "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-950 max-w-4xl leading-[1.1] mb-6",
+              children: "Every Great Idea Deserves to Become Something Real."
+            }),
+
+            // Subhead
+            e.jsx("p", {
+              className: "text-lg sm:text-xl text-zinc-600 max-w-3xl leading-relaxed mb-10",
+              children: "Reworkzone began in 2023 with a simple belief: creativity should never stop at an idea. In a world where brands need more than just visibility, we built a creative company that brings imagination and execution closer together—where strategy meets design, technology meets creativity, and ambitious concepts become meaningful experiences."
+            }),
+
+            // Actions & Metrics
+            e.jsxs("div", {
+              className: "flex flex-col sm:flex-row sm:items-center gap-4 mb-16",
+              children: [
+                e.jsx(C, {
+                  to: "/contact",
+                  className: "inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-zinc-950 text-white font-medium text-sm hover:bg-zinc-800 transition-colors shadow-sm",
+                  children: "Start a Conversation"
+                }),
+                e.jsx(C, {
+                  to: "/portfolio",
+                  className: "inline-flex items-center justify-center px-6 py-3.5 rounded-lg border border-zinc-300 bg-white text-zinc-800 font-medium text-sm hover:bg-zinc-50 hover:border-zinc-400 transition-colors",
+                  children: "Explore Our Work"
+                })
+              ]
+            }),
+
+            // Metrics Bar
+            e.jsxs("div", {
+              className: "grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-zinc-200/90",
+              children: [
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("div", { className: "text-3xl lg:text-4xl font-extrabold text-zinc-950", children: "2023" }),
+                    e.jsx("div", { className: "text-xs font-medium text-zinc-500 uppercase tracking-wider mt-1", children: "Established In" })
+                  ]
+                }),
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("div", { className: "text-3xl lg:text-4xl font-extrabold text-zinc-950", children: "6" }),
+                    e.jsx("div", { className: "text-xs font-medium text-zinc-500 uppercase tracking-wider mt-1", children: "Creative Disciplines" })
+                  ]
+                }),
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("div", { className: "text-3xl lg:text-4xl font-extrabold text-red-600", children: "100%" }),
+                    e.jsx("div", { className: "text-xs font-medium text-zinc-500 uppercase tracking-wider mt-1", children: "Concept to Execution" })
+                  ]
+                }),
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("div", { className: "text-3xl lg:text-4xl font-extrabold text-zinc-950", children: "Gujarat" }),
+                    e.jsx("div", { className: "text-xs font-medium text-zinc-500 uppercase tracking-wider mt-1", children: "Operations Base" })
+                  ]
+                })
+              ]
+            })
+          ]
+        })
       }),
 
-      /* =========================================================================
-         SCREEN 1: HERO — Plain Category H1, Hard Facts, High-Impact Real Photo
-         ========================================================================= */
+      /* 2. THE FOUNDING STORY & VISION */
       e.jsx("section", {
-        className: "relative pt-32 pb-20 sm:pt-40 sm:pb-28 border-b border-stone-200/80 overflow-hidden",
-        id: "about-hero",
+        className: "py-20 lg:py-28 border-b border-zinc-200/80 bg-[#FAFAFA]",
         children: e.jsxs("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12",
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
           children: [
             e.jsxs("div", {
-              className: "grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center",
+              className: "grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start",
               children: [
-                // Left Column: Copy & Value Proposition
+                // Left Column: The Narrative
                 e.jsxs("div", {
-                  className: "lg:col-span-7 space-y-6 text-left",
+                  className: "lg:col-span-7",
                   children: [
-                    e.jsxs("div", {
-                      className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-crimson/10 border border-crimson/20 text-crimson font-mono text-[11px] font-bold tracking-widest uppercase",
+                    e.jsx("span", {
+                      className: "text-xs font-bold tracking-widest text-red-600 uppercase mb-3 block",
+                      children: "OUR STORY"
+                    }),
+                    e.jsx("h2", {
+                      className: "text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight leading-tight mb-6",
+                      children: "Bringing Imagination and Execution Closer Together."
+                    }),
+                    e.jsx("div", {
+                      className: "space-y-4 text-base sm:text-lg text-zinc-600 leading-relaxed",
                       children: [
-                        e.jsx("span", { className: "h-2 w-2 rounded-full bg-crimson animate-pulse" }),
-                        "CREATIVE AGENCY & EVENT FABRICATION // AHMEDABAD"
-                      ]
-                    }),
-                    e.jsx("h1", {
-                      className: "font-sans font-black text-4xl sm:text-6xl lg:text-7xl text-charcoal tracking-tight uppercase leading-[0.96]",
-                      children: "We Build Brands, Stages & Digital Platforms."
-                    }),
-                    e.jsx("p", {
-                      className: "text-stone-600 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl",
-                      children: "Reworkzone is an Ahmedabad-based studio of designers, engineers, and spatial fabricators. We translate corporate offerings into memorable brand identities, custom web products, and large-scale exhibition architecture across India and abroad."
-                    }),
-                    
-                    // Hard facts row
-                    e.jsxs("div", {
-                      className: "grid grid-cols-3 gap-4 pt-4 pb-2 border-y border-stone-200/80 max-w-xl",
-                      children: [
-                        e.jsxs("div", {
-                          className: "space-y-1",
-                          children: [
-                            e.jsx("span", { className: "block font-mono font-black text-2xl sm:text-3xl text-charcoal tracking-tight", children: "240+" }),
-                            e.jsx("span", { className: "block font-mono text-[10px] sm:text-xs uppercase text-stone-500 font-semibold tracking-wider", children: "Executed Projects" })
-                          ]
+                        e.jsx("p", {
+                          children: "From shaping brand identities and developing digital experiences to producing events, creating visual content, and building engaging physical environments, our approach brings different creative disciplines together with one shared purpose: to create work that makes an impact."
                         }),
-                        e.jsxs("div", {
-                          className: "space-y-1",
-                          children: [
-                            e.jsx("span", { className: "block font-mono font-black text-2xl sm:text-3xl text-crimson tracking-tight", children: "100%" }),
-                            e.jsx("span", { className: "block font-mono text-[10px] sm:text-xs uppercase text-stone-500 font-semibold tracking-wider", children: "In-House Build" })
-                          ]
-                        }),
-                        e.jsxs("div", {
-                          className: "space-y-1",
-                          children: [
-                            e.jsx("span", { className: "block font-mono font-black text-2xl sm:text-3xl text-charcoal tracking-tight", children: "Gujarat" }),
-                            e.jsx("span", { className: "block font-mono text-[10px] sm:text-xs uppercase text-stone-500 font-semibold tracking-wider", children: "Workshop Base" })
-                          ]
-                        })
-                      ]
-                    }),
-
-                    // Action buttons
-                    e.jsxs("div", {
-                      className: "flex flex-wrap items-center gap-4 pt-2",
-                      children: [
-                        e.jsxs("button", {
-                          onClick: () => handleInquiry("New Partnership Inquiry"),
-                          className: "px-8 py-4 bg-crimson hover:bg-[#d92d1c] text-white text-xs font-bold font-mono uppercase tracking-widest rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center gap-2",
-                          children: [
-                            "Start a Project",
-                            e.jsx(U, { className: "h-4 w-4" })
-                          ]
-                        }),
-                        e.jsxs(C, {
-                          to: "/portfolio",
-                          className: "px-8 py-4 bg-white hover:bg-stone-50 border border-stone-300 text-charcoal text-xs font-bold font-mono uppercase tracking-widest rounded-xl transition-all hover:border-stone-400 cursor-pointer flex items-center gap-2",
-                          children: [
-                            "Examine Portfolio",
-                            e.jsx(U, { className: "h-4 w-4 text-stone-400" })
-                          ]
+                        e.jsx("p", {
+                          children: "In typical industries, brands have to juggle design agencies, web developers, fabrication workshops, and event managers separately. Ideas get diluted across every handover. At Reworkzone, strategy meets design, technology meets creativity, and ambitious concepts become tangible realities without compromise."
                         })
                       ]
                     })
                   ]
                 }),
 
-                // Right Column: Hero Real Photograph
+                // Right Column: Architectural Highlight Card
                 e.jsx("div", {
                   className: "lg:col-span-5",
                   children: e.jsxs("div", {
-                    className: "relative rounded-3xl overflow-hidden border border-stone-200/90 shadow-2xl bg-stone-900 group aspect-[4/5] sm:aspect-square lg:aspect-[4/5]",
+                    className: "bg-zinc-950 text-white rounded-2xl p-8 lg:p-10 shadow-xl border border-zinc-800 relative overflow-hidden",
                     children: [
-                      e.jsx("img", {
-                        src: "/Image/Gallery/ONGC/DSC_6410.jpg",
-                        alt: "Live event fabrication by Reworkzone",
-                        loading: "eager",
-                        decoding: "async",
-                        className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95 group-hover:brightness-100"
+                      e.jsxs("div", {
+                        className: "inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-red-400 mb-6",
+                        children: [
+                          e.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-red-400" }),
+                          "The Reworkzone Standard"
+                        ]
+                      }),
+                      e.jsx("blockquote", {
+                        className: "text-xl sm:text-2xl font-semibold leading-snug tracking-tight text-zinc-100 mb-6",
+                        children: "“We don’t believe in creativity for the sake of appearance. Every design, campaign, digital platform, and experience should serve a purpose, solve a problem, and connect with the people it was created for.”"
                       }),
                       e.jsx("div", {
-                        className: "absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent pointer-events-none"
-                      }),
-                      e.jsxs("div", {
-                        className: "absolute bottom-6 left-6 right-6 text-left text-white space-y-1.5 p-4 rounded-2xl bg-stone-950/75 backdrop-blur-md border border-white/10",
-                        children: [
-                          e.jsx("span", {
-                            className: "text-[10px] font-mono uppercase tracking-widest text-crimson font-bold block",
-                            children: "ON-GROUND PRODUCTION // AHMEDABAD"
-                          }),
-                          e.jsx("h4", {
-                            className: "font-sans font-bold text-base sm:text-lg text-white leading-snug",
-                            children: "ONGC Navratri 2026 Grand Stage Fabrication"
-                          }),
-                          e.jsx("p", {
-                            className: "text-stone-300 text-xs font-normal leading-relaxed",
-                            children: "9-Night festival architecture, entrance gate setups & QR verification at Malaviya Cricket Ground."
-                          })
-                        ]
+                        className: "pt-6 border-t border-zinc-800 text-xs font-mono uppercase tracking-wider text-zinc-400",
+                        children: "Purpose-Driven Execution — Est. 2023"
                       })
                     ]
                   })
@@ -268,351 +272,236 @@ function AboutUsView({ onOpenContact, setActiveView }) {
         })
       }),
 
-      /* =========================================================================
-         SECTION 2: CAPABILITIES — The 4 Core Disciplines With Real Photos
-         ========================================================================= */
+      /* 3. DIFFERENT MINDS. ONE CREATIVE DIRECTION */
       e.jsx("section", {
-        className: "py-24 sm:py-32 border-b border-stone-200/80",
-        id: "capabilities",
+        className: "py-20 lg:py-28 border-b border-zinc-200/80 bg-white",
         children: e.jsxs("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12 space-y-16",
-          children: [
-            // Head row
-            e.jsxs("div", {
-              className: "flex flex-col md:flex-row md:items-end justify-between gap-6 text-left",
-              children: [
-                e.jsxs("div", {
-                  className: "space-y-3 max-w-2xl",
-                  children: [
-                    e.jsx("span", {
-                      className: "text-xs font-mono font-bold uppercase tracking-widest text-crimson block",
-                      children: "// FOUR CORE DISCIPLINES"
-                    }),
-                    e.jsx("h2", {
-                      className: "font-sans font-black text-3xl sm:text-5xl text-charcoal tracking-tight uppercase leading-none",
-                      children: "What We Design & Build"
-                    })
-                  ]
-                }),
-                e.jsx("p", {
-                  className: "text-stone-600 text-sm sm:text-base max-w-md font-normal leading-relaxed",
-                  children: "We deliver full-cycle creative execution. Every deliverable is produced by our dedicated in-house departments."
-                })
-              ]
-            }),
-
-            // Grid of 4 disciplines
-            e.jsx("div", {
-              className: "grid grid-cols-1 md:grid-cols-2 gap-8 text-left",
-              children: DISCIPLINES.map((item, idx) => e.jsxs(C, {
-                key: item.num,
-                to: item.link,
-                className: "group bg-white rounded-3xl border border-stone-200/80 hover:border-crimson/50 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between cursor-pointer",
-                children: [
-                  e.jsxs("div", {
-                    className: "relative aspect-[16/10] overflow-hidden bg-stone-900",
-                    children: [
-                      e.jsx("img", {
-                        src: item.image,
-                        alt: item.title,
-                        loading: "lazy",
-                        decoding: "async",
-                        className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      }),
-                      e.jsx("div", {
-                        className: "absolute top-4 left-4 bg-stone-950/80 backdrop-blur-md px-3 py-1.5 rounded-full text-white font-mono text-[11px] font-bold tracking-widest uppercase",
-                        children: item.num
-                      }),
-                      e.jsx("div", {
-                        className: "absolute bottom-4 right-4 h-10 w-10 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal group-hover:bg-crimson group-hover:text-white transition-colors shadow-md",
-                        children: e.jsx(U, { className: "h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" })
-                      })
-                    ]
-                  }),
-                  e.jsxs("div", {
-                    className: "p-8 space-y-4 flex-1 flex flex-col justify-between",
-                    children: [
-                      e.jsxs("div", {
-                        className: "space-y-2",
-                        children: [
-                          e.jsx("span", {
-                            className: "font-mono text-[10px] font-bold text-stone-400 uppercase tracking-widest block",
-                            children: item.subtitle
-                          }),
-                          e.jsx("h3", {
-                            className: "font-sans font-black text-2xl text-charcoal group-hover:text-crimson transition-colors uppercase tracking-tight",
-                            children: item.title
-                          }),
-                          e.jsx("p", {
-                            className: "text-stone-600 text-sm sm:text-base leading-relaxed font-normal pt-1",
-                            children: item.description
-                          })
-                        ]
-                      }),
-                      e.jsxs("div", {
-                        className: "pt-4 border-t border-stone-100 flex items-center gap-2 text-stone-500 font-mono text-xs font-semibold",
-                        children: [
-                          e.jsx(G, { className: "h-3.5 w-3.5 text-crimson shrink-0" }),
-                          e.jsx("span", { className: "truncate", children: item.proof })
-                        ]
-                      })
-                    ]
-                  })
-                ]
-              }))
-            })
-          ]
-        })
-      }),
-
-      /* =========================================================================
-         SECTION 3: PRODUCTION METHODOLOGY — How We Work
-         ========================================================================= */
-      e.jsx("section", {
-        className: "py-24 sm:py-32 bg-stone-950 text-white relative overflow-hidden",
-        id: "production-methodology",
-        children: e.jsxs("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12 relative z-10 space-y-16",
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
           children: [
             e.jsxs("div", {
-              className: "max-w-2xl text-left space-y-3",
+              className: "max-w-3xl mb-16",
               children: [
                 e.jsx("span", {
-                  className: "text-xs font-mono font-bold uppercase tracking-widest text-crimson block",
-                  children: "// PRODUCTION FRAMEWORK"
+                  className: "text-xs font-bold tracking-widest text-red-600 uppercase mb-3 block",
+                  children: "COLLECTIVE CULTURE"
                 }),
                 e.jsx("h2", {
-                  className: "font-sans font-black text-3xl sm:text-5xl text-white tracking-tight uppercase leading-none",
-                  children: "Engineered From Concept to Floor."
+                  className: "text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight leading-tight mb-4",
+                  children: "Different Minds. One Creative Direction."
                 }),
                 e.jsx("p", {
-                  className: "text-stone-400 text-sm sm:text-base leading-relaxed font-normal pt-2",
-                  children: "Whether constructing an exhibition pavilion or programming a custom web app, our linear four-stage framework prevents bottlenecks and guarantees on-time delivery."
+                  className: "text-base sm:text-lg text-zinc-600 leading-relaxed",
+                  children: "At Reworkzone, we believe the strongest ideas emerge when different perspectives work together. Designers, developers, strategists, creators, and execution teams contribute their expertise to turn challenges into possibilities."
                 })
               ]
             }),
 
+            // 4 Role Pillars
             e.jsx("div", {
-              className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left",
-              children: WORKFLOW_STEPS.map((step) => e.jsxs("div", {
-                key: step.step,
-                className: "p-8 rounded-2xl bg-stone-900/90 border border-stone-800 hover:border-crimson/50 transition-all duration-300 flex flex-col justify-between space-y-6 group",
-                children: [
-                  e.jsxs("div", {
-                    className: "flex items-center justify-between border-b border-stone-800 pb-4",
-                    children: [
-                      e.jsx("span", {
-                        className: "font-mono font-black text-3xl text-crimson tracking-tight",
-                        children: step.step
-                      }),
-                      e.jsx("span", {
-                        className: "text-[10px] font-mono uppercase tracking-widest text-stone-400 font-bold",
-                        children: step.phase
-                      })
-                    ]
-                  }),
-                  e.jsxs("div", {
-                    className: "space-y-2 flex-1",
-                    children: [
-                      e.jsx("h3", {
-                        className: "font-sans font-extrabold text-lg text-white group-hover:text-crimson transition-colors",
-                        children: step.title
-                      }),
-                      e.jsx("p", {
-                        className: "text-stone-400 text-xs sm:text-sm leading-relaxed font-normal",
-                        children: step.desc
-                      })
-                    ]
-                  })
-                ]
-              }))
-            })
-          ]
-        })
-      }),
-
-      /* =========================================================================
-         SECTION 4: REAL LANDMARKS & TIMELINE
-         ========================================================================= */
-      e.jsx("section", {
-        className: "py-24 sm:py-32 border-b border-stone-200/80",
-        id: "chronicles",
-        children: e.jsxs("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12 space-y-16",
-          children: [
-            e.jsxs("div", {
-              className: "flex flex-col md:flex-row md:items-end justify-between gap-6 text-left",
-              children: [
+              className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+              children: ROLES.map((r, i) =>
                 e.jsxs("div", {
-                  className: "space-y-3 max-w-2xl",
+                  key: i,
+                  className: "p-6 rounded-xl border border-zinc-200/80 bg-zinc-50/60 hover:bg-white hover:border-zinc-300 hover:shadow-md transition-all",
                   children: [
-                    e.jsx("span", {
-                      className: "text-xs font-mono font-bold uppercase tracking-widest text-crimson block",
-                      children: "// DOCUMENTED MILESTONES"
+                    e.jsx("div", {
+                      className: "w-8 h-8 rounded-lg bg-red-100 text-red-600 font-bold text-xs flex items-center justify-center mb-4",
+                      children: "0" + (i + 1)
                     }),
-                    e.jsx("h2", {
-                      className: "font-sans font-black text-3xl sm:text-5xl text-charcoal tracking-tight uppercase leading-none",
-                      children: "Key Agency Landmarks"
+                    e.jsx("h3", {
+                      className: "text-base font-bold text-zinc-900 mb-2",
+                      children: r.role
+                    }),
+                    e.jsx("p", {
+                      className: "text-sm text-zinc-600 leading-relaxed",
+                      children: r.desc
                     })
                   ]
-                }),
-                e.jsx("p", {
-                  className: "text-stone-600 text-sm sm:text-base max-w-md font-normal leading-relaxed",
-                  children: "Our track record spans cultural festivals, sporting arenas, corporate conventions, and digital platforms."
                 })
-              ]
-            }),
-
-            e.jsx("div", {
-              className: "space-y-4 text-left",
-              children: LANDMARKS.map((lm, idx) => e.jsxs("div", {
-                key: lm.year + idx,
-                className: "p-8 rounded-3xl bg-white border border-stone-200/80 hover:border-stone-400 hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center",
-                children: [
-                  e.jsx("div", {
-                    className: "lg:col-span-2",
-                    children: e.jsx("span", {
-                      className: "font-mono font-black text-3xl sm:text-4xl text-charcoal block",
-                      children: lm.year
-                    })
-                  }),
-                  e.jsxs("div", {
-                    className: "lg:col-span-6 space-y-1",
-                    children: [
-                      e.jsx("h3", {
-                        className: "font-sans font-black text-xl sm:text-2xl text-charcoal uppercase tracking-tight",
-                        children: lm.title
-                      }),
-                      e.jsx("p", {
-                        className: "font-serif italic text-sm text-stone-500",
-                        children: lm.location
-                      })
-                    ]
-                  }),
-                  e.jsx("div", {
-                    className: "lg:col-span-4",
-                    children: e.jsx("p", {
-                      className: "text-stone-600 text-xs sm:text-sm leading-relaxed font-normal",
-                      children: lm.scope
-                    })
-                  })
-                ]
-              }))
+              )
             })
           ]
         })
       }),
 
-      /* =========================================================================
-         SECTION 5: THE REWORKZONE DIFFERENCE — Concrete Advantages
-         ========================================================================= */
+      /* 4. THE CREATIVE ECOSYSTEM — 6 DISCIPLINES */
       e.jsx("section", {
-        className: "py-24 sm:py-32 border-b border-stone-200/80 bg-stone-50/60",
-        id: "principles",
+        id: "ecosystem",
+        className: "py-20 lg:py-28 border-b border-zinc-200/80 bg-[#FAFAFA]",
         children: e.jsxs("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12 space-y-16",
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
           children: [
             e.jsxs("div", {
-              className: "max-w-2xl text-left space-y-3",
+              className: "max-w-3xl mb-16",
               children: [
                 e.jsx("span", {
-                  className: "text-xs font-mono font-bold uppercase tracking-widest text-crimson block",
-                  children: "// THE REWORKZONE ADVANTAGE"
+                  className: "text-xs font-bold tracking-widest text-red-600 uppercase mb-3 block",
+                  children: "THE ECOSYSTEM"
                 }),
                 e.jsx("h2", {
-                  className: "font-sans font-black text-3xl sm:text-5xl text-charcoal tracking-tight uppercase leading-none",
-                  children: "Why Clients Choose Us."
+                  className: "text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight leading-tight mb-4",
+                  children: "More Than an Agency. A Creative Ecosystem."
                 }),
                 e.jsx("p", {
-                  className: "text-stone-600 text-sm sm:text-base leading-relaxed font-normal pt-2",
-                  children: "We combine the hands-on engineering of a physical fabrication house with the design polish of a modern software studio."
+                  className: "text-base sm:text-lg text-zinc-600 leading-relaxed",
+                  children: "Reworkzone brings together six interconnected creative disciplines. Each discipline brings a different strength. Together, they allow us to approach every project with a broader creative perspective."
                 })
               ]
             }),
 
+            // 6 Grid
             e.jsx("div", {
-              className: "grid grid-cols-1 md:grid-cols-3 gap-8 text-left",
-              children: PRINCIPLES.map((pr) => e.jsxs("div", {
-                key: pr.title,
-                className: "p-8 rounded-3xl bg-white border border-stone-200/80 hover:border-crimson/40 hover:shadow-xl transition-all duration-300 space-y-4 flex flex-col justify-between",
-                children: [
-                  e.jsxs("div", {
-                    className: "space-y-3",
-                    children: [
-                      e.jsx("div", {
-                        className: "h-11 w-11 rounded-2xl bg-crimson/10 text-crimson flex items-center justify-center font-mono font-bold",
-                        children: e.jsx(G, { className: "h-5 w-5" })
-                      }),
-                      e.jsx("h3", {
-                        className: "font-sans font-black text-xl text-charcoal uppercase tracking-tight pt-2",
-                        children: pr.title
-                      }),
-                      e.jsx("p", {
-                        className: "font-mono text-xs text-crimson font-semibold uppercase tracking-wider",
-                        children: pr.subtitle
-                      }),
-                      e.jsx("p", {
-                        className: "text-stone-600 text-sm leading-relaxed font-normal pt-1",
-                        children: pr.desc
-                      })
-                    ]
-                  })
-                ]
-              }))
+              className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+              children: DISCIPLINES.map((d, i) =>
+                e.jsxs("div", {
+                  key: i,
+                  className: "flex flex-col justify-between p-8 rounded-2xl border border-zinc-200/90 bg-white hover:border-zinc-300 hover:shadow-lg transition-all",
+                  children: [
+                    e.jsxs("div", {
+                      children: [
+                        e.jsxs("div", {
+                          className: "flex items-center justify-between mb-4",
+                          children: [
+                            e.jsx("span", {
+                              className: "text-xs font-bold text-red-600 uppercase tracking-wider",
+                              children: d.tag
+                            }),
+                            e.jsx("span", {
+                              className: "text-xs font-mono font-semibold text-zinc-400",
+                              children: d.num
+                            })
+                          ]
+                        }),
+                        e.jsx("h3", {
+                          className: "text-xl font-bold text-zinc-950 mb-3",
+                          children: d.title
+                        }),
+                        e.jsx("p", {
+                          className: "text-sm text-zinc-600 leading-relaxed mb-6 font-medium",
+                          children: d.description
+                        }),
+                        e.jsx("ul", {
+                          className: "space-y-2 mb-8",
+                          children: d.bullets.map((b, bi) =>
+                            e.jsxs("li", {
+                              key: bi,
+                              className: "flex items-start gap-2 text-xs text-zinc-600 leading-normal",
+                              children: [
+                                e.jsx("span", { className: "text-red-500 font-bold mt-0.5", children: "•" }),
+                                e.jsx("span", { children: b })
+                              ]
+                            })
+                          )
+                        })
+                      ]
+                    }),
+                    e.jsx(C, {
+                      to: d.link,
+                      className: "inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 transition-colors pt-4 border-t border-zinc-100",
+                      children: [
+                        "Explore Discipline",
+                        e.jsx("span", { className: "ml-1.5", children: "→" })
+                      ]
+                    })
+                  ]
+                })
+              )
             })
           ]
         })
       }),
 
-      /* =========================================================================
-         SECTION 6: FINAL EDITORIAL CLOSE / CTA
-         ========================================================================= */
+      /* 5. OUR PHILOSOPHY */
       e.jsx("section", {
-        className: "py-24 sm:py-32",
-        id: "about-close",
+        className: "py-20 lg:py-28 border-b border-zinc-200/80 bg-white",
+        children: e.jsxs("div", {
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+          children: [
+            e.jsxs("div", {
+              className: "max-w-3xl mb-16",
+              children: [
+                e.jsx("span", {
+                  className: "text-xs font-bold tracking-widest text-red-600 uppercase mb-3 block",
+                  children: "OPERATING CODE"
+                }),
+                e.jsx("h2", {
+                  className: "text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight leading-tight mb-4",
+                  children: "Think Beyond. Create With Purpose. Deliver With Precision."
+                }),
+                e.jsx("p", {
+                  className: "text-base sm:text-lg text-zinc-600 leading-relaxed",
+                  children: "We believe great work is built on curiosity, collaboration, attention to detail, and the courage to explore new possibilities. For us, success isn't simply completing a project — it's creating something that genuinely serves the brand, connects with its audience, and continues to deliver value beyond launch."
+                })
+              ]
+            }),
+
+            // 3 Philosophy Pillars
+            e.jsx("div", {
+              className: "grid grid-cols-1 md:grid-cols-3 gap-8",
+              children: PILLARS.map((p, i) =>
+                e.jsxs("div", {
+                  key: i,
+                  className: "p-8 rounded-2xl border border-zinc-200 bg-zinc-50/50 hover:bg-white hover:border-zinc-300 transition-all",
+                  children: [
+                    e.jsx("div", {
+                      className: "text-xs font-mono font-bold text-red-600 uppercase tracking-widest mb-3",
+                      children: "Principle " + p.step
+                    }),
+                    e.jsx("h3", {
+                      className: "text-2xl font-bold text-zinc-950 mb-1",
+                      children: p.title
+                    }),
+                    e.jsx("div", {
+                      className: "text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-4",
+                      children: p.subtitle
+                    }),
+                    e.jsx("p", {
+                      className: "text-sm text-zinc-600 leading-relaxed",
+                      children: p.body
+                    })
+                  ]
+                })
+              )
+            })
+          ]
+        })
+      }),
+
+      /* 6. OUR JOURNEY & FINAL CTA BANNER */
+      e.jsx("section", {
+        className: "py-20 lg:py-24 bg-zinc-950 text-white relative overflow-hidden",
         children: e.jsx("div", {
-          className: "mx-auto max-w-7xl px-6 sm:px-12",
+          className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
           children: e.jsxs("div", {
-            className: "p-10 sm:p-16 lg:p-20 rounded-3xl bg-stone-950 text-white relative overflow-hidden text-left space-y-8",
+            className: "max-w-3xl",
             children: [
-              e.jsx("div", {
-                className: "absolute top-0 right-0 w-96 h-96 bg-crimson/15 rounded-full blur-[120px] pointer-events-none"
-              }),
               e.jsxs("div", {
-                className: "relative z-10 space-y-4 max-w-3xl",
+                className: "inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-red-400 mb-6",
                 children: [
-                  e.jsx("span", {
-                    className: "text-xs font-mono font-bold uppercase tracking-widest text-crimson block",
-                    children: "// START A COLLABORATION"
-                  }),
-                  e.jsx("h2", {
-                    className: "font-sans font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight uppercase leading-[0.96]",
-                    children: "Ready to Build Your Next Landmark?"
-                  }),
-                  e.jsx("p", {
-                    className: "text-stone-300 text-base sm:text-lg leading-relaxed font-normal pt-2",
-                    children: "Whether you are designing a high-converting exhibition pavilion, developing custom web architecture, or revamping your enterprise brand identity, our Ahmedabad studio is ready to build it."
-                  })
+                  e.jsx("span", { className: "w-2 h-2 rounded-full bg-red-500 animate-ping" }),
+                  "OUR JOURNEY IS JUST BEGINNING"
                 ]
               }),
+              e.jsx("h2", {
+                className: "text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-[1.15]",
+                children: "“We don’t just imagine what’s next. We work to create it.”"
+              }),
+              e.jsx("p", {
+                className: "text-base sm:text-lg text-zinc-300 leading-relaxed mb-10",
+                children: "Since 2023, our ambition has remained the same: to keep exploring, keep evolving, and keep creating work that matters. We're building Reworkzone around a simple idea — that when creativity, technology, and execution work together, extraordinary possibilities emerge."
+              }),
               e.jsxs("div", {
-                className: "relative z-10 flex flex-wrap items-center gap-4 pt-4",
+                className: "flex flex-col sm:flex-row sm:items-center gap-4",
                 children: [
-                  e.jsxs("button", {
-                    onClick: () => handleInquiry("General Collaboration Inquiry"),
-                    className: "px-8 py-4.5 bg-crimson hover:bg-[#d92d1c] text-white text-xs font-bold font-mono uppercase tracking-widest rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center gap-2",
-                    children: [
-                      "Contact Our Studio",
-                      e.jsx(U, { className: "h-4 w-4" })
-                    ]
+                  e.jsx(C, {
+                    to: "/contact",
+                    className: "inline-flex items-center justify-center px-7 py-4 rounded-lg bg-red-600 text-white font-semibold text-sm hover:bg-red-500 transition-colors shadow-lg",
+                    children: "Get in Touch"
                   }),
-                  e.jsxs(C, {
+                  e.jsx(C, {
                     to: "/portfolio",
-                    className: "px-8 py-4.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold font-mono uppercase tracking-widest rounded-xl transition-all cursor-pointer flex items-center gap-2",
-                    children: [
-                      "Explore Completed Work",
-                      e.jsx(U, { className: "h-4 w-4 text-stone-300" })
-                    ]
+                    className: "inline-flex items-center justify-center px-7 py-4 rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-200 font-semibold text-sm hover:bg-zinc-800 hover:text-white transition-colors",
+                    children: "View Our Work"
                   })
                 ]
               })
@@ -620,6 +509,7 @@ function AboutUsView({ onOpenContact, setActiveView }) {
           })
         })
       })
+
     ]
   });
 }
