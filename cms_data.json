@@ -776,6 +776,32 @@
   ],
   "portfolio": [
     {
+      "id": "diabutsav-app",
+      "title": "Diabutsav App",
+      "category": "Apps",
+      "description": "Comprehensive wellness, diet, and health-tracking mobile platform engineered for proactive metabolic lifestyle management. Features daily calorie counters, personalized assessment journeys, BMI/BMR biometrics analytics, and integrated lab test scheduling.",
+      "client": "Diabutsav (Wellness & Health Tracking Platform)",
+      "year": "2026",
+      "image": "/Image/Gallery/Apps/diabutsav_app_showcase.webp",
+      "services": [
+        "Mobile App Architecture",
+        "UI/UX Product Design",
+        "Health Metrics & Biometrics Engine",
+        "Custom Diet & Calorie Logic"
+      ],
+      "challenge": "Designing a frictionless, habit-forming health-tracking experience that simplifies complex metabolic data (BMI, BMR, daily caloric expenditure) into intuitive, actionable daily routines for users of all age groups.",
+      "solution": "Engineered an empathetic, high-contrast mobile interface with dynamic assessment progress bars, custom calorie target calculators (1600 to 2200 kcal charts), real-time biometric snapshot widgets, and a modular architecture connecting nutrition, events, and diagnostics.",
+      "results": [
+        "Delivered end-to-end iOS & Android design systems with sub-50ms screen transition latency.",
+        "Modular assessment engine driving 4/8 completion rate in initial user onboarding.",
+        "Unified health ecosystem connecting daily diet logs, doctor-recommended tests, and wellness events."
+      ],
+      "gallery": [
+        "/Image/Gallery/Apps/diabutsav_app_showcase.webp",
+        "/Image/Gallery/Apps/diabutsav_app.png"
+      ]
+    },
+    {
       "id": "ongc-navratri-2026",
       "title": "ONGC Navratri 2026",
       "category": "Events",
